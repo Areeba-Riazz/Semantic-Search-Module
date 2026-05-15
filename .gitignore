@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Vector store data (auto-generated)
+Vector_Store/faiss_store/
+Vector_Store/chroma_store/
+
+# Auto-saved uploaded documents (not part of source code)
+data/*.txt
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
