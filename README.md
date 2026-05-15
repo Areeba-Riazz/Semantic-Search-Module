@@ -1,7 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/15si9kMD)
-
 # Semantic Search Module
-**CS-4015: Agentic AI | Homework #1 (Phase 1)**  
+**CS-4015: Agentic AI**  
 **National University of Computer & Emerging Sciences (FAST-NUCES)**
 
 **Student Name:** Areeba Riaz  
@@ -9,7 +7,7 @@
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 This project implements the **Memory System** of an AI Research Assistant — a Semantic Search Module that retrieves academic documents based on **contextual meaning** rather than keyword matching.
 
@@ -19,7 +17,7 @@ This is Phase 1 of a multi-part Agentic AI pipeline, laying the foundation for a
 
 ---
 
-## 🛠️ System Architecture
+##  System Architecture
 
 The system follows a modular, sequential pipeline where each layer has a single responsibility.
 
@@ -49,7 +47,7 @@ The system follows a modular, sequential pipeline where each layer has a single 
 
 ---
 
-## 📊 Embedding Models
+## Embedding Models
 
 | Model | Dimensions | Characteristics |
 |---|---|---|
@@ -59,11 +57,11 @@ The system follows a modular, sequential pipeline where each layer has a single 
 | `paraphrase-MiniLM-L6-v2` | 384 | Strong on paraphrase detection and semantic similarity |
 | `all-distilroberta-v1` | 768 | Robust general performance with RoBERTa backbone |
 
-> ℹ️ **Score interpretation:** Both FAISS and Chroma return L2 distance scores — **lower score = more semantically relevant**.
+> **Score interpretation:** Both FAISS and Chroma return L2 distance scores — **lower score = more semantically relevant**.
 
 ---
 
-## ⚙️ Installation & Usage
+## Installation & Usage
 
 **Prerequisites:** Python 3.10+
 
@@ -104,7 +102,7 @@ Opens at `http://localhost:8501`
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 semantic-search-module/
