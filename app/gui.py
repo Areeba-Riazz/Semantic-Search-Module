@@ -513,14 +513,14 @@ if st.button("🔎 Search", use_container_width=True, type="primary"):
         # ── Display Results ──────────────────────────
         st.markdown(
             f"<p style='color:#A0AEBD; font-size:0.9rem;'>"
-            f"Found <b>{len(results)}</b> results in <b>{search_time:.3f}s</b></p>",
+            f"Found <b>{len(results)}</b> results in <b>{search_time:.3f}s</b> "
+            f"&nbsp;·&nbsp; <span style='font-size:0.82rem;'>ℹ️ Lower score = more relevant (distance-based ranking)</span></p>",
             unsafe_allow_html=True,
         )
 
         for rank, (doc, score) in enumerate(results, start=1):
-            # For FAISS, lower score = more similar (L2 distance)
-            # For Chroma, it could be distance or similarity depending on config
-            # We display raw score and let user interpret via log
+            # Both FAISS and Chroma return L2 distance scores via LangChain.
+            # Lower score = more semantically similar to the query.
             source = doc.metadata.get("source", "Unknown")
             content_preview = doc.page_content[:500]
 

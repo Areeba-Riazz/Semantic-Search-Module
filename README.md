@@ -1,7 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/15si9kMD)
-
 # Semantic Search Module
-### CS-4015 Agentic AI — HW1 Phase 1
 
 A modular semantic search engine designed as the memory layer for an AI Research Assistant. Upload documents, choose an embedding model, build a vector index, and retrieve results by meaning — not keywords.
 
